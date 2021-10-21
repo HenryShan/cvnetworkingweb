@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/cvnetworkingweb/static/css/main.a617e044.chunk.css",
+    "main.js": "/cvnetworkingweb/static/js/main.67043706.chunk.js",
+    "main.js.map": "/cvnetworkingweb/static/js/main.67043706.chunk.js.map",
+    "runtime-main.js": "/cvnetworkingweb/static/js/runtime-main.ed840870.js",
+    "runtime-main.js.map": "/cvnetworkingweb/static/js/runtime-main.ed840870.js.map",
+    "static/js/2.eaaeb875.chunk.js": "/cvnetworkingweb/static/js/2.eaaeb875.chunk.js",
+    "static/js/2.eaaeb875.chunk.js.map": "/cvnetworkingweb/static/js/2.eaaeb875.chunk.js.map",
+    "static/js/3.e5db12cc.chunk.js": "/cvnetworkingweb/static/js/3.e5db12cc.chunk.js",
+    "static/js/3.e5db12cc.chunk.js.map": "/cvnetworkingweb/static/js/3.e5db12cc.chunk.js.map",
+    "index.html": "/cvnetworkingweb/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/cvnetworkingweb/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.eaaeb875.chunk.js.LICENSE.txt": "/cvnetworkingweb/static/js/2.eaaeb875.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/cvnetworkingweb/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed840870.js",
+    "static/js/2.eaaeb875.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.67043706.chunk.js"
+  ]
+}

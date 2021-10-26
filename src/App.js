@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import background from './materials/backgroundImg.png'
+import './App.css'
 
 function App() {
+  const container = {
+       backgroundImage: `url(${background})`,
+       backgroundPosition: 0,
+       backgroundSize: 'cover',
+       backgroundRepeat: 'no-repeat',
+       width: '100vw',
+       height: '100vh'
+   };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={container}>
+      <div>
+        <footer className='App-footer'> <p> <code> CVNetworking Project </code> </p> </footer>
+      </div>
+      
     </div>
   );
 }

@@ -1,37 +1,60 @@
-import background from './materials/backgroundImg.png'
+// import background from './materials/backgroundImg.png'
 import './App.css'
+import Regi from './Regi';
+import Introduction from './Introduction';
+import Instruction from './Instructions';
+import StepProgressBar from 'react-step-progress';
+import 'react-step-progress/dist/index.css';
 
 function App() {
   const container = {
-       backgroundImage: `url(${background})`,
-      //  width: Dimensions.get('window').width,
-      //  height: Dimensions.get('window').height,
-       position: "absolute",
-       top: 0,
-       left: 0,
-       right: 0,
-       bottom: 0,
-       zIndex: -1,
-      //  backgroundPosition: 0,
-       backgroundSize: 'cover',
-       backgroundRepeat: 'no-repeat',
-      //  width: '100vw',
-      //  height: '100vh'
-   };
+    //  backgroundImage: `url(${background})`,
+     top: 0,
+     left: 0,
+     right: 0,
+     bottom: 0,
+     zIndex: -1,
+     backgroundSize: 'cover',
+     backgroundRepeat: 'no-repeat',
+ };
+
+  const open_annotator = () => {
+    window.open("http://34.122.132.125:5000/#/auth")
+  }
+
+  const user_steps = [
+    {
+      label: 'Introduction',
+      name: 'step 1',
+      content: <Introduction/>
+    },
+    {
+      label: 'Register and Upload',
+      name: 'step 2',
+      content: <Regi/>,
+      // validator: step2Validator
+    },
+    {
+      label: 'Go Annotating',
+      name: 'step 3',
+      content: <Instruction/>
+      // <a href="http://35.238.183.90:5000/#/auth">Annotator</a>,
+      // validator: step3Validator
+    }
+  ]
+
+
+
+
+
   return (
     <div className="App" style={container}>
-        <footer className='App-footer' style={{fontFamily: 'Share Tech', fontSize:64}}> <p> CVNetworking Project </p> </footer>
-        <span style={{fontFamily: 'Share Tech', fontSize:36}}> Introduction: </span>
-        <div className='introduction'>
-          <div>
-            Networking topologies are an essential tool used by people to design network architectures and guide configuring the network environments like Local Area Network. So far people need to manually
-            modify the configuration of deveices inside a network environment, which may cause delay and extra power consumption in situations that need to change the topology more frequently.
-          </div>
-          <div style={{marginTop: 10}}>
-            To tackle this
-            kind of problem, our team tried to apply computer vision to recognize hand-written networking topologies and automatically configure network environments.
-          </div>
-        </div>
+        <StepProgressBar
+          startingStep={2}
+          steps={user_steps}
+          onSubmit={open_annotator}
+          submitBtnName="Go to annotator!"
+        />
     </div>
   );
 }
